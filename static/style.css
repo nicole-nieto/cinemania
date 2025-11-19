@@ -1,24 +1,29 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #0f0f0f;
-  color: #fff;
+/* Estilos generales del cuerpo */
+body {  
+  font-family: 'Poppins', sans-serif; /* Tipografía principal */
+  background-color: #0f0f0f; /* Fondo oscuro tipo Netflix */
+  color: #fff; /* Texto blanco */
   margin: 0;
   padding: 0;
 }
 
+/* Contenedor principal centrado */
 .container {
   text-align: center;
   margin-top: 40px;
 }
 
+/* Color especial para el span del título */
 h1 span {
-  color: #e50914;
+  color: #e50914; /* Rojo característico */
 }
 
+/* Margen superior para el formulario */
 form {
   margin-top: 20px;
 }
 
+/* Estilos para el input de búsqueda */
 input {
   padding: 10px;
   width: 300px;
@@ -27,8 +32,9 @@ input {
   font-size: 16px;
 }
 
+/* Botón principal */
 button {
-  background-color: #e50914;
+  background-color: #e50914; /* Rojo Netflix */
   color: white;
   padding: 10px 16px;
   border: none;
@@ -37,33 +43,38 @@ button {
   font-size: 16px;
 }
 
+/* Efecto hover del botón */
 button:hover {
-  background-color: #b00610;
+  background-color: #b00610; /* Rojo más oscuro */
 }
 
+/* Contenedor donde se mostrarán los resultados */
 #results {
   margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
+/* Tarjeta de la película */
 .movie-card {
-  background-color: #1a1a1a;
+  background-color: #1a1a1a; /* Fondo oscuro */
   border-radius: 12px;
   padding: 20px;
-  width: 800px;
+  width: 800px; /* Ancho fijo */
   text-align: left;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-  animation: fadeIn 0.5s ease-in;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Suave sombra */
+  animation: fadeIn 0.5s ease-in; /* Animación de aparición */
 }
 
+/* Imagen del póster */
 .poster {
   display: block;
-  margin: 0 auto 20px;
+  margin: 0 auto 20px; /* Centrada */
   border-radius: 12px;
-  width: 50%;
+  width: 50%; /* Reduce tamaño */
 }
 
+/* Iframe del tráiler */
 .trailer {
   width: 100%;
   height: 400px;
@@ -71,19 +82,22 @@ button:hover {
   margin-top: 20px;
 }
 
+/* Contenedor de los GIFs */
 .gifs {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Para que bajen en filas */
   gap: 10px;
   margin-top: 20px;
 }
 
+/* Cada GIF individual */
 .gifs img {
-  width: 30%;
+  width: 30%; /* Tamaño proporcional */
   border-radius: 10px;
 }
 
+/* Sección de películas similares */
 .similares {
   background-color: #181818;
   padding: 15px;
@@ -91,25 +105,30 @@ button:hover {
   margin-top: 20px;
 }
 
+/* Título de "Similares" */
 .similares h3 {
-  color: #e50914;
+  color: #e50914; /* Rojo destacado */
   margin-top: 0;
 }
 
+/* Información general de la película */
 .movie-info {
-  line-height: 1.7;
+  line-height: 1.7; /* Más separadas las líneas */
   font-size: 15px;
 }
 
+/* Resaltar datos importantes */
 .movie-info strong {
   color: #e50914;
 }
 
+/* Animación de entrada del contenido */
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
 
+/* Contenedor del estado de carga */
 .loading {
   display: flex;
   flex-direction: column;
@@ -121,15 +140,17 @@ button:hover {
   font-size: 18px;
 }
 
+/* Animación del spinner de carga */
 .spinner {
   width: 40px;
   height: 40px;
-  border: 4px solid rgba(255, 255, 255, 0.2);
-  border-top-color: #e50914;
+  border: 4px solid rgba(255, 255, 255, 0.2); /* Parte transparente */
+  border-top-color: #e50914; /* Parte que rota */
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite; /* Giro continuo */
 }
 
+/* Animación del spinner */
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
